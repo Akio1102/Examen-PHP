@@ -6,12 +6,12 @@ if (!defined("DB_HOST")) {
     define("DB_HOST","localhost");
 }
 if (!defined("DB_NAME")) {
-    define("DB_NAME","Alquilartemis");
+    define("DB_NAME","campuslands");
 }
 if (!defined("DB_USER")) {
-    define("DB_USER","root");
+    define("DB_USER","campus");
 }
 if (!defined("DB_PWD")) {
-    define("DB_PWD","");
+    define("DB_PWD","campus2023");
 }
 ?>
