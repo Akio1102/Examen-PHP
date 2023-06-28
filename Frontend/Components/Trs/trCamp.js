@@ -1,9 +1,14 @@
-export function RowPais(pais) {
-  let tablaPais = document.querySelector("#tabla");
-  tablaPais.innerHTML += `
-    <tr id="${pais.idPais}">
-        <td>${pais.idPais}</td>
-        <td>${pais.nombrePais}</td>
+export function RowCamper(camper) {
+  let tablaCamper = document.querySelector("#tabla");
+  tablaCamper.innerHTML += `
+    <tr id="${camper.idCamper}">
+        <td>${camper.idCamper}</td>
+        <td>${camper.nombreCamper}</td>
+        <td>${camper.apellidoCamper}</td>
+        <td>${camper.fechaNac}</td>
+        <td>${camper.idReg}</td>
+        <td>${camper.nombreReg}</td>
+        <td>${camper.idDep}</td>
         <td>
           <button data-accion="editar" class="btn btn-warning" id="editPais" data-bs-toggle="modal" data-bs-target= "#modalPaisEdit">
             <i class="bi bi-pencil-square"></i> Editar

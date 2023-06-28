@@ -50,3 +50,19 @@ DESCRIBE region;
 DESCRIBE campers;
 
 INSERT INTO pais (nombrePais) VALUES ("Brazil");
+
+INSERT INTO departamento (nombreDep,idPais) VALUES ("Medellin",1);
+
+INSERT INTO region (nombreReg,idDep) VALUES (:name,:idD);
+
+SELECT * FROM region;
+
+SELECT d.idDep, d.nombreDep, d.idPais, p.nombrePais FROM departamento d INNER JOIN pais p ON d.idPais = p.idPais;
+
+INSERT INTO region (nombreReg,idDep) VALUES ("<zzzzz",2);
+
+SELECT r.idReg,r.nombreReg,r.idDep,d.nombreDep,d.idPais FROM region r INNER JOIN departamento d ON r.idDep = d.idDep;
+
+INSERT INTO campers (nombreCamper,apellidoCamper,fechaNac,idReg) VALUES ("Akio","Diaz","2008-11-11,1",1);
+
+SELECT c.idCamper,c.nombreCamper,c.apellidoCamper,c.fechaNac,c.idReg,r.nombreReg,r.idDep FROM campers c INNER JOIN region r ON c.idReg = r.idDep;
