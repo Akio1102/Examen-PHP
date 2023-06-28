@@ -48,3 +48,5 @@ DESCRIBE pais;
 DESCRIBE departamento;
 DESCRIBE region;
 DESCRIBE campers;
+
+INSERT INTO pais (nombrePais) VALUES ("Brazil");
